@@ -1,0 +1,56 @@
+:root {
+
+    --menu-background-color: #b0aea7;
+    --menu-link-color: #f51b02;
+}
+
+.dark-mode {
+
+
+}
+
+html, body {
+    
+    height: 100%;
+    width: 100%;
+}
+
+#menu {
+
+    z-index: 200;
+    float: left;
+    top: 50px;
+    width: 20%;
+    height: 100%;
+    padding: 20% 2.5%;
+    background-color: var( --menu-background-color );
+
+}
+
+#show-button {
+
+    z-index: 300;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    display: block;
+    float: left;
+}
+
+#content {
+
+    width: 100%;
+    height: 100%;
+}
+
+.ac-menu-link {
+
+    color: var( --menu-link-color ) !important;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+}
+
+.ac-menu-link:hover {
+
+    text-decoration: underline;
+}
