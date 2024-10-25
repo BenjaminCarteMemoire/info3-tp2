@@ -1,7 +1,8 @@
 :root {
 
-    --menu-background-color: #b0aea7;
+    --menu-background-color: linear-gradient(to right, #b0aea7, #fff );
     --menu-link-color: #f51b02;
+    --header-background-color: linear-gradient( #858282, #c9c6c5, #858282 )
 }
 
 .dark-mode {
@@ -15,6 +16,11 @@ html, body {
     width: 100%;
 }
 
+h1 {
+
+    font-weight: 36px;
+}
+
 #menu {
 
     z-index: 200;
@@ -23,7 +29,7 @@ html, body {
     width: 20%;
     height: 100%;
     padding: 20% 2.5%;
-    background-color: var( --menu-background-color );
+    background: var( --menu-background-color );
 
 }
 
@@ -41,6 +47,41 @@ html, body {
 
     width: 100%;
     height: 100%;
+}
+
+#ac-header {
+
+    width: 100%;
+    height: 10%;
+    background: var( --header-background-color );
+    position: sticky; 
+    top: 0;
+}
+
+#ac-header-image {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+}
+
+#ac-page-title {
+
+    width: 100%;
+    height: 30%;
+    background-color: rgba( 0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    text-align: center;
+    position: sticky;
+}
+
+#ac-page-content {
+
+    background-color: var( --content-background-color );
 }
 
 .ac-menu-link {
