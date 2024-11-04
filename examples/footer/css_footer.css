@@ -1,0 +1,32 @@
+#footer {
+    background-color: black;
+    padding: 10px;
+}
+
+#reseaux, #contact {
+    display: flex;
+    list-style-type : none;
+    justify-content: center;
+    
+}
+
+
+#contact li {
+    list-style-type: none ;
+    min-width: 12%;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+}
+
+#watermark {
+    padding-left: 100px;
+    color: white;
+}
