@@ -1,0 +1,150 @@
+:root {
+
+    --menu-background-color: linear-gradient(to right, #b0aea7, #fff );
+    --menu-link-color: #f51b02;
+    --header-background-color: linear-gradient( #858282, #c9c6c5, #858282 )
+}
+
+.dark-mode {
+
+
+}
+
+html, body {
+    
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+
+    font-weight: 36px;
+}
+
+#menu {
+
+    z-index: 200;
+    float: left;
+    top: 50px;
+    width: 20%;
+    height: 100%;
+    padding: 20% 2.5%;
+    background: var( --menu-background-color );
+
+}
+
+#show-button {
+
+    z-index: 300;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    display: block;
+    float: left;
+    border-radius: 15%;
+}
+
+#content {
+
+    width: 100%;
+    height: 100%;
+}
+
+#ac-header {
+
+    width: 100%;
+    height: 10%;
+    background: var( --header-background-color );
+    position: sticky; 
+    top: 0;
+    z-index: 299;
+}
+
+#ac-header-image {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+    height: 100%;
+}
+
+#ac-page-title {
+
+    width: 100%;
+    height: 30%;
+    background-color: rgba( 0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    padding-top: 3.5%;
+    top: 0;
+    z-index: 200;
+}
+
+#ac-page-content {
+
+    top: 0;
+    background-color: var( --content-background-color );
+    margin: 3% 16%;
+    text-align: center;
+    z-index: 100;
+
+}
+
+.ac-menu-link {
+
+    color: var( --menu-link-color ) !important;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+}
+
+.ac-menu-link:hover {
+
+    text-decoration: underline;
+}
+
+.modal-image {
+
+    max-width: 50%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    background-color: black;
+    padding: 10px;
+}
+
+#reseaux, #contact {
+    display: flex;
+    list-style-type : none;
+    justify-content: center;
+    
+}
+
+#contact li {
+    list-style-type: none ;
+    min-width: 12%;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+}
+
+#contact a:hover {
+
+    text-decoration: underline;
+}
+
+#watermark {
+    padding-left: 100px;
+    color: white;
+}
