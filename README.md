@@ -12,3 +12,5 @@
 - Importer les logos Font Awesome.
 - Formulaire de contact
 - Grilles Accueil.
+
+### Rectifier le dashboard menu, voir CSS WP.
