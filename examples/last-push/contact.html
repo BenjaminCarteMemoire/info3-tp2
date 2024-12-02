@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <button onClick="showHideMenu()" id="show-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+    </button>
+    <div id="menu" style="display: none;">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link ac-menu-link" href="index.html" >Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ac-menu-link" href="presentation.html">Présentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ac-menu-link" href="produits.html">Produits / Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ac-menu-link" href="contact.html">Nous Contacter</a>
+            </li>
+            <li class="nav-item">
+              <a id="darkLightToggle" class="nav-link ac-menu-link" href="#switchTheme">Switch Theme</a>
+            </li> 
+        </ul>
+    </div>
+    <div id="content" class="menu-darker-part">
+        <div id="ac-header">
+            <img id="ac-header-image" src="assets/images/logo.png">
+        </div>
+        <div id="ac-page-title">
+            <h1>Nous Contacter</h1>
+            <p>Vous êtes intéressé par un de nos produits, contactez nous !</p>
+        </div>
+        <div id="ac-page-content">
+
+            <div class="ac-contact-box">
+                <div class="ac-contact-subbox">
+                    <h3>Nous retrouver sur :</h3>
+                    <ul id="reseaux">
+                        <li> <a href="https://www.x.com"> <img src="assets/images/icons8-twitterx-24.png" alt="" > </a> </li>
+                        <li> <a href="https://www.instagram.com"> <img src="assets/images/icons8-instagram-24.png" alt="" > </a> </li>
+                        <li> <a href="https://www.youtube.com"> <img src="assets/images/icons8-youtube-24.png" alt="" > </a> </li>
+                        <li> <a href="https://www.tiktok.com"> <img src="assets/images/icons8-tiktok-24.png" alt="" > </a> </li>
+                    </ul>
+                    <hr>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d161900.60908602952!2d3.105251938721635!3d50.65131787724456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1732543463078!5m2!1sfr!2sfr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>On ne vous mordra pas, ramenez nous un croissant ;)</p>
+                </div>
+                <div class="ac-contact-subbox">
+                    <h3>Nous contacter à :</h3>
+                    <a href="mailto:contact@antredescartes.org"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                      </svg>&nbsp;contact@antredescartes.org</a>
+                    <hr>
+                    <form id="contactForm">
+                        <label for="name">Nom : <input type="text" id="name" name="name" value="" placeholder="John Doe"></label>
+                        <label for="mail">E-Mail : <input type="text" id="mail" name="mail" value="" placeholder="test@test.com"></label>
+                        <label for="subject">Sujet : <input type="text" id="subject" name="subject" value="" placeholder="..."></label>
+                        <label for="form-content">Contenu : <textarea id="form-content" name="form-content" value="" rows="5" cols="20"></textarea></label>
+                        <input type="submit" name="submit-form" id="submit" value="Envoyer">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+  <!-- Start Footer-->
+  <div id="footer">
+
+    <hr>
+    <ul id="contact">
+      <li>  <a href="#"> Politique de confidentialité </a> </li>
+      <li> <a href="contact.html"> Nous contacter </a> </li>
+      <li> <a href="#">  Conditions générales de vente </a> </li>
+      <li> <a href="#">  FAQ </a> </li>
+    </ul>
+    <hr>
+    <ul id="reseaux">
+      <li> <a href="https://www.x.com"> <img src="assets/images/icons8-twitterx-24.png" alt="" > </a> </li>
+      <li> <a href="https://www.instagram.com"> <img src="assets/images/icons8-instagram-24.png" alt="" > </a> </li>
+      <li> <a href="https://www.youtube.com"> <img src="assets/images/icons8-youtube-24.png" alt="" > </a> </li>
+      <li> <a href="https://www.tiktok.com"> <img src="assets/images/icons8-tiktok-24.png" alt="" > </a> </li>
+    </ul>
+
+    <p id="watermark">
+      © 2024 L'antre des cartes
+    </p>
+    <hr>
+
+  </div>
+  <!-- End Footer-->
+    </div>
+
+</body>
+<script src="assets/js/script.js"></script>
+</html>
