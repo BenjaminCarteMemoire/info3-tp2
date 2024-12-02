@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Produits - L'Antre des cartes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <button onClick="showHideMenu()" id="show-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+    </button>
+    <div id="menu" style="display: none;">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link ac-menu-link" href="index.html" >Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ac-menu-link" href="presentation.html">Présentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ac-menu-link" href="produits.html">Produits / Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ac-menu-link" href="contact.html">Nous Contacter</a>
+            </li>
+            <li class="nav-item">
+              <a id="darkLightToggle" class="nav-link ac-menu-link" href="#switchTheme">Switch Theme</a>
+            </li> 
+        </ul>
+    </div>
+    <div id="content" class="menu-darker-part">
+        <div id="ac-header">
+            <img id="ac-header-image" src="assets/images/logo.png">
+        </div>
+        <div id="ac-page-title">
+            <h1> Produits/Services</h1>
+            <p> Nos cartes créés en colaboration avec des jeux-vidéos célèbres où l'on peut personalisé le dos des cartes </p>
+        </div>
+        <div id="ac-page-content">
+
+          <!-- Start Carousel -->
+          <div class="ac-carousel">
+            <img id="car-image" src="#" alt="Wrong Image URL">
+            <div class="car-controls">
+              <button id="car-back" class="car-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-start-fill" viewBox="0 0 16 16">
+                  <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0z"/>
+                </svg>
+              </button>
+              <button id="car-add-url" class="car-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                </svg>
+              </button>
+              <button id="car-next" class="car-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-end-fill" viewBox="0 0 16 16">
+                  <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0z"/>
+                </svg>
+              </button>
+            </div>
+            <p>Image <span id="car-nb-image-front"></span> sur <span id="car-nb-image-back"></span>.</p>
+          </div>
+          <noscript>Please enable Javascript to use the carousel.</noscript>
+          <!-- End Carousel -->
+
+          <!-- Start Card List n°1 -->
+          <div class="row mb-3 text-center">
+
+            <!-- Start Card n°1 -->
+            <div class="col">
+              <div class="card" style="width: 19rem;">
+                <img src="assets/images/K77.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> Cyberpunk 2077 </h5>
+                  <a href="#" id="launchModal-1" class="btn btn-primary" data-modal-id="1" data-bs-toggle="modal" data-bs-target="#CardModal"> En savoir plus </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card n°1 -->
+
+            <!-- Start Card n°2 -->
+            <div class="col">
+              <div class="card" style="width: 19rem;">
+                <img src="assets/images/QSLAY.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> Slay the Spire </h5>
+                  <a href="#" id="launchModal-2" class="btn btn-primary" data-modal-id="2" data-bs-toggle="modal" data-bs-target="#CardModal"> En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card n°2 -->
+
+            <!-- Start Card n°3 -->
+            <div class="col">
+              <div class="card" style="width: 19rem;">
+                <img src="assets/images/JISAAC.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Binding of Isaac </h5>
+                  <a href="#" id="launchModal-3" class="btn btn-primary" data-modal-id="3" data-bs-toggle="modal" data-bs-target="#CardModal"> En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card n°3 -->
+
+            </div>
+            <!-- End Card List n°1 -->
+
+          <!-- Start Card List n°2 -->
+          <div class="row mb-3 text-center">
+
+            <!-- Start Card n°4 -->
+            <div class="col">
+              <div class="card" style="width: 19rem;">
+                <img src="assets/images/KSTAR.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Stardew Valley</h5>
+                  <a href="#" id="launchModal-4" class="btn btn-primary" data-modal-id="4" data-bs-toggle="modal" data-bs-target="#CardModal">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card n°4 -->
+
+            <!-- Start Card n°5 -->
+            <div class="col">
+              <div class="card" style="width: 19rem;">
+                <img src="assets/images/QWITCHER.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> The Witcher </h5>
+                  <a href="#" id="launchModal-5" class="btn btn-primary" data-modal-id="5" data-bs-toggle="modal" data-bs-target="#CardModal">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card n°5 -->
+
+            <!-- Start Card n°6 -->
+            <div class="col">
+              <div class="card" style="width: 19rem;">
+                <img src="assets/images/JDAVE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dave The Diver</h5>
+                  <a href="#" id="launchModal-6" class="btn btn-primary" data-modal-id="6" data-bs-toggle="modal" data-bs-target="#CardModal">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card n°6 -->
+
+            </div>
+            <!-- End Card List n°2 -->
+
+            <!-- Start Card List n°3 -->
+          <div class="row mb-3 text-center">
+
+            <!-- Start Card n°7 -->
+            <div class="col">
+              <div class="card" style="width: 19rem;">
+                <img src="assets/images/KAMONG.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> Among Us</h5>
+                  <a href="#" id="launchModal-7" class="btn btn-primary" data-modal-id="7" data-bs-toggle="modal" data-bs-target="#CardModal">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card n°7 -->
+
+            <!-- Start Card n°8 -->
+            <div class="col">
+              <div class="card" style="width: 19rem;">
+                <img src="assets/images/QDRACULA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> Castlevania</h5>
+                  <a href="#" id="launchModal-8" class="btn btn-primary" data-modal-id="8" data-bs-toggle="modal" data-bs-target="#CardModal">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card n°8 -->
+
+            <!-- Start Card n°9 -->
+            <div class="col">
+              <div class="card" style="width: 19rem;">
+                <img src="assets/images/Cartemystère.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> 27/02/2025</h5>
+                  <a href="#" id="launchModal-9" class="btn btn-primary" data-modal-id="9" data-bs-toggle="modal" data-bs-target="#CardModal">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Card n°9 -->
+
+            </div>
+            <!-- End Card List n°3 -->
+
+        </div>
+
+  <!-- Start Footer-->
+  <div id="footer">
+
+    <hr>
+    <ul id="contact">
+      <li>  <a href="#"> Politique de confidentialité </a> </li>
+      <li> <a href="contact.html"> Nous contacter </a> </li>
+      <li> <a href="#">  Conditions générales de vente </a> </li>
+      <li> <a href="#">  FAQ </a> </li>
+    </ul>
+    <hr>
+    <ul id="reseaux">
+      <li> <a href="https://www.x.com"> <img src="assets/images/icons8-twitterx-24.png" alt="" > </a> </li>
+      <li> <a href="https://www.instagram.com"> <img src="assets/images/icons8-instagram-24.png" alt="" > </a> </li>
+      <li> <a href="https://www.youtube.com"> <img src="assets/images/icons8-youtube-24.png" alt="" > </a> </li>
+      <li> <a href="https://www.tiktok.com"> <img src="assets/images/icons8-tiktok-24.png" alt="" > </a> </li>
+    </ul>
+
+    <p id="watermark">
+      © 2024 L'antre des cartes
+    </p>
+    <hr>
+
+  </div>
+  <!-- End Footer-->
+    </div>
+
+    <!-- Start Modal Template -->
+    <div class="modal fade" id="CardModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="ModalLabel"></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/images/logo.png" alt="No image found." id="modalImage" class="modal-image">
+            <p id="modalBody">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Template -->
+
+</body>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/modal-text.js"></script>
+<script src="assets/js/carousel.js"></script>
+</html>
